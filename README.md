@@ -2,8 +2,12 @@
 
 2D Pokémon movement developed with Godot 3.5.net
 
-test
+visualization of Mvp:
+  https://scratch.mit.edu/projects/612145106/
 
-reasource: https://docs.godotengine.org/en/stable/getting_started/step_by_step/
+~~~~~~ resources ~~~~~~~~ 
+documentation for beginning projects:
+  https://docs.godotengine.org/en/stable/getting_started/step_by_step/
 
-https://scratch.mit.edu/projects/18962545
+maybe can use:
+  https://scratch.mit.edu/projects/18962545
