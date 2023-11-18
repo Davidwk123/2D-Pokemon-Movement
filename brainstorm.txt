@@ -1,0 +1,19 @@
+MVP | Social Simulation game 
+* Have multiple maps
+* Have multiple characters
+* Have special animation
+	* For jumping 
+	* Sprinting
+* Character movement
+____________________________
+Future Gameplay - Most likely to be implemented 
+* NPC AI for characters/pokemon
+* Pokemon Buddy feature
+* Networking
+	* Online chat
+	* See other players in map
+____________________________
+Finialized vision - Could be new github repo
+* Player is the pokemon
+* Special events 
+	* Turn game into 3D
