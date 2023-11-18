@@ -1,6 +1,6 @@
 # 2D-Pokemon-Movement
 
-2D Pokémon movement developed with Godot
+2D Pokémon movement developed with Godot 3.5.net
 
 test
 
