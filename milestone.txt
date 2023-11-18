@@ -1,0 +1,7 @@
+Milestone 1 -- No new team members 
+* One map -- David
+* One Character -- Kalin
+	* All character sprites
+* Static image on phone(ios/android)
+	* Setup working phone dev -- David/Kalin
+* Teach eachother concepts 
