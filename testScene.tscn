@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://basketball.png" type="Texture" id=1]
+
+[node name="testScene" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_left = 539.0
+margin_top = 300.0
+margin_right = 579.0
+margin_bottom = 340.0
+
+[node name="sprite" type="Sprite" parent="Control"]
+scale = Vector2( 0.12, 0.12 )
+texture = ExtResource( 1 )
