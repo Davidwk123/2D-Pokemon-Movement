@@ -10,8 +10,8 @@ config_version=4
 
 [application]
 
-config/name="2d- Pokemon- Movement V 3"
-run/main_scene="res://testScene.tscn"
+config/name="2D-Pokemon-Movement "
+run/main_scene="res://TestScene.tscn"
 config/icon="res://icon.png"
 
 [global]
@@ -32,4 +32,3 @@ quality/driver/driver_name="GLES2"
 quality/driver/fallback_to_gles2=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
-environment/default_environment="res://default_env.tres"
