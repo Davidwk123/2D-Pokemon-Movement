@@ -11,8 +11,12 @@ config_version=4
 [application]
 
 config/name="2D-Pokemon-Movement "
-run/main_scene="res://TestScene.tscn"
+run/main_scene="res://world_scene.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/height=576
 
 [global]
 
