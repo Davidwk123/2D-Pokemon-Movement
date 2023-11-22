@@ -11,3 +11,4 @@ documentation for beginning projects:
 
 maybe can use:
   https://scratch.mit.edu/projects/18962545
+  Character camera movement: https://www.youtube.com/watch?v=QH5YtfVq6g0&t=92s
