@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://pokmeon_tileset.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/pokmeon_tileset.png" type="Texture" id=1]
 
 [sub_resource type="TileSet" id=1]
 0/name = "pokmeon_tileset.png 0"
