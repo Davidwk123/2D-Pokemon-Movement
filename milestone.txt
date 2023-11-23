@@ -1,5 +1,5 @@
 Milestone 1 -- No new team members 
-* One map -- David
+* One map (open), One Map (more complex bounds) -- David
 * One Character -- Kalin
 	* All character sprites
 * Static image on phone(ios/android)
