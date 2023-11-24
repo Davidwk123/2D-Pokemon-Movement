@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pokmeon_tileset.png-0580dee40170779a77dfe98e9cdc2c7d.stex"
+path="res://.import/icon.png-816117353ba57afc3af521f78eedcc3c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/pokmeon_tileset.png"
-dest_files=[ "res://.import/pokmeon_tileset.png-0580dee40170779a77dfe98e9cdc2c7d.stex" ]
+source_file="res://assets/icons/icon.png"
+dest_files=[ "res://.import/icon.png-816117353ba57afc3af521f78eedcc3c.stex" ]
 
 [params]
 
