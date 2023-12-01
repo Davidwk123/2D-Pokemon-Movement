@@ -1,7 +1,9 @@
 Milestone 1 -- No new team members 
-* One map -- David
+* One map (open)
+	* More complex bounds
+	* Add different cosemetic details -- David
 * One Character -- Kalin
 	* All character sprites
 * Static image on phone(ios/android)
-	* Setup working phone dev -- David/Kalin
+	* Setup working phone dev -- David/Kalin	<*>
 * Teach eachother concepts 
