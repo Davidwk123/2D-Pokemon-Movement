@@ -15,3 +15,6 @@ maybe can use:
 
 character finder:
   https://www.deviantart.com/zender1752/art/Pokemon-SM-male-protagonist-overworld-sprite-621803818
+
+photo editor free:
+  https://www.fotor.com/features/background-remover
