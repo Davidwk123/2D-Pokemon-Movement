@@ -25,5 +25,7 @@ func _physics_process(delta):
 	
 	if input.length() != 0:
 		input = input.normalized()
+	else:
+		anim.play("idle")
 
 	move_and_collide(input * SPEED * delta)
