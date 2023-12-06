@@ -1,6 +1,7 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/maps/pokmeon_tileset.png" type="Texture" id=1]
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
 points = PoolVector2Array( 0, 0, 48, 0, 48, 48, 0, 48 )
@@ -721,3 +722,6 @@ cell_size = Vector2( 16, 16 )
 show_collision = true
 format = 1
 tile_data = PoolIntArray( 917520, 14, 0, 1048598, 14, 0, 1638406, 11, 0, 1638416, 11, 0, 1703952, 11, 0, 1769478, 3, 0, 1769479, 3, 0, 1769480, 3, 0, 1835014, 11, 0, 1835024, 3, 0, 1966091, 13, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 427, 473 )
