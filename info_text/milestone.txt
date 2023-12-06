@@ -6,4 +6,24 @@ Milestone 1 -- No new team members
 	* All character sprites		<*>
 * Static image on phone(ios/android)
 	* Setup working phone dev -- David/Kalin	<*>
-* Teach eachother concepts 
+* Teach eachother concepts 		<*>
+
+--------------------------------------------------------------------
+
+Milestone 2 -- No new team members
+* Larger Scale Map -- David
+	*Bounds on map
+
+* Camera Tracking  -- David
+	*Follow character, make sure only thing in view is correct map
+
+* Find constant size for character 		<*>
+
+* Possibly refactor movement of Character using animation tree -- Kalin
+	-research web for good pixel art 
+	-find really good animation for one character
+	-make sure idle movement works as expected
+
+*Teach eachother concepts
+
+----------------------------------------------------------------------
