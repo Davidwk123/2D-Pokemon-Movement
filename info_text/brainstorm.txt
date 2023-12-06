@@ -14,6 +14,12 @@ Future Gameplay - Most likely to be implemented
 	* See other players in map
 ____________________________
 Finialized vision - Could be new github repo
+*Idle game that promotes playing and moving around
 * Player is the pokemon
 * Special events 
 	* Turn game into 3D
+*Game is a Maze game (each map is a level)
+	*Dungeon, mystrey game
+	* if we have multplier you can see eachother if on same level
+	* and encounter would switch between two different types of the game
+		*like portal system (one portal would be the orginal game, and the other would be something else)
