@@ -11,7 +11,7 @@ documentation for beginning projects:
 
 maybe can use:
   https://scratch.mit.edu/projects/18962545
-  Character camera movement: https://www.youtube.com/watch?v=QH5YtfVq6g0&t=92s
+  
 
 character finder:
   https://www.deviantart.com/zender1752/art/Pokemon-SM-male-protagonist-overworld-sprite-621803818
@@ -25,3 +25,5 @@ map:
 
 character:
   tourist girl: https://www.deviantart.com/arkeweditor/art/Overworld-sprite-tourist-XY-886638350
+  animation: https://www.youtube.com/watch?v=jSv5sGpnFso
+  Character camera movement: https://www.youtube.com/watch?v=QH5YtfVq6g0&t=92s
