@@ -18,3 +18,10 @@ character finder:
 
 photo editor free:
   https://www.fotor.com/features/background-remover
+
+map:
+  16x16: https://www.deviantart.com/chaoticcherrycake/art/Pokemon-Tileset-From-Public-Tiles-358379026
+  32x32: https://www.deviantart.com/chaoticcherrycake/art/Pokemon-Tileset-From-Public-Tiles-32x32-623246343
+
+character:
+  tourist girl: https://www.deviantart.com/arkeweditor/art/Overworld-sprite-tourist-XY-886638350
