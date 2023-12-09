@@ -249,7 +249,7 @@ tree_root = SubResource( 55 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 56 )
-parameters/idle/blend_position = Vector2( -0.985737, 0 )
+parameters/idle/blend_position = Vector2( 0.00316954, 0.982759 )
 parameters/walk/blend_position = Vector2( 0, 0 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
