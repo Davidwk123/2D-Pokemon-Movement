@@ -87,9 +87,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=39]
 resource_name = "walk_down"
-length = 1.6
+length = 1.04
 loop = true
-step = 0.4
+step = 0.26
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -97,7 +97,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
+"times": PoolRealArray( 0, 0.26, 0.52, 0.78 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 4, 3, 5, 3 ]
@@ -105,9 +105,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=40]
 resource_name = "walk_left"
-length = 1.6
+length = 1.04
 loop = true
-step = 0.4
+step = 0.26
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -115,7 +115,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
+"times": PoolRealArray( 0, 0.26, 0.52, 0.78 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 7, 6, 8, 6 ]
@@ -123,9 +123,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=41]
 resource_name = "walk_right"
-length = 1.6
+length = 1.04
 loop = true
-step = 0.4
+step = 0.26
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -133,7 +133,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
+"times": PoolRealArray( 0, 0.26, 0.52, 0.78 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 10, 9, 11, 9 ]
@@ -141,9 +141,9 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=42]
 resource_name = "walk_up"
-length = 1.6
+length = 1.04
 loop = true
-step = 0.4
+step = 0.26
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -151,7 +151,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.4, 0.8, 1.2 ),
+"times": PoolRealArray( 0, 0.26, 0.52, 0.78 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 1, 0, 2, 0 ]
@@ -251,3 +251,7 @@ active = true
 parameters/playback = SubResource( 56 )
 parameters/idle/blend_position = Vector2( -0.985737, 0 )
 parameters/walk/blend_position = Vector2( 0, 0 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 8, 8 )
+cast_to = Vector2( 0, 16 )

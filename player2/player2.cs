@@ -12,11 +12,14 @@ public class player2 : KinematicBody2D
 	public AnimationTree AnimTree;
 	public AnimationNodeStateMachinePlayback AnimState;
 
+	// Collision varaible
+	public RayCast2D Ray;
+
 	// How fast character moves from each tile
 	[Export]
-	public float WalkSpeed = 2.0f;
+	public float WalkSpeed = 3.0f;
 
-	// Scale bascially used to zoom in map
+	// Scale bascially used to zoom in map and correctly adjust character tile movement
 	public const int SCALE = 2;
 	// How far the character can move each direction
 	public const int TILE_SIZE_SCALED = 16 * SCALE;
@@ -32,9 +35,10 @@ public class player2 : KinematicBody2D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		// Get animation child nodes from character 
+		// Get child nodes from character 
 		AnimTree = GetNode<AnimationTree>("AnimationTree");
 		AnimState = (AnimationNodeStateMachinePlayback)GetNode<AnimationTree>("AnimationTree").Get("parameters/playback");
+		Ray = GetNode<RayCast2D>("RayCast2D");
 		// Get current position of character
 		InitialPosition = Position;
 	}
@@ -100,24 +104,39 @@ public class player2 : KinematicBody2D
 	// Function that applys movement to chracter
 	private void _Move(float delta)
 	{
-		// The distance moved represented with a percent based on the characters speed in the current timestep
-		PercentMovedToNextTile += WalkSpeed * delta;
-		
-		/*
-		 * _Move function will get called every frame untill the PrecentMoved var is greater than or equal to 1,
-		 * each frame the var gets increased each timestep which causes the slow increase of player position,
-		 * this causes the smooth movement 
-		 */
-		if (PercentMovedToNextTile >= 1.0f)
+		// Collision check 
+		// Get the new vector that the raycast will cast onto, it will cast on to the next tile the character intends to go onto
+		Vector2 DesiredStep =  InputDirection * (TILE_SIZE_SCALED/(2 * SCALE)); 
+		Ray.CastTo = DesiredStep;
+		Ray.ForceRaycastUpdate();
+	   
+		if (Ray.IsColliding() == false)
 		{
-			Position = InitialPosition + (TILE_SIZE_SCALED * InputDirection);
-			PercentMovedToNextTile = 0.0f;
-			IsMoving = false;
+			// The distance moved represented with a percent based on the characters speed in the current timestep
+			PercentMovedToNextTile += WalkSpeed * delta;
+
+			/*
+			 * _Move function will get called every frame untill the PrecentMoved var is greater than or equal to 1,
+			 * each frame the var gets increased each timestep which causes the slow increase of player position,
+			 * this causes the smooth movement 
+			 */
+			if (PercentMovedToNextTile >= 1.0f)
+			{
+				Position = InitialPosition + (TILE_SIZE_SCALED * InputDirection);
+				PercentMovedToNextTile = 0.0f;
+				IsMoving = false;
+			}
+			else
+			{
+				Position = InitialPosition + (TILE_SIZE_SCALED * InputDirection) * PercentMovedToNextTile;
+			}
 		}
 		else
 		{
-			Position = InitialPosition + (TILE_SIZE_SCALED * InputDirection) * PercentMovedToNextTile;
+			PercentMovedToNextTile = 0.0f;
+			IsMoving = false; 
 		}
+		
 	}
 
 	//  // Called every frame. 'delta' is the elapsed time since the previous frame.
