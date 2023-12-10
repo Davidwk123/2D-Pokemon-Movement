@@ -5,7 +5,10 @@
 visualization of Mvp:
   https://scratch.mit.edu/projects/612145106/
 
-~~~~~~ resources ~~~~~~~~ 
+~~~~~~ resources ~~~~~~~~
+enviornment:
+  https://www.youtube.com/watch?v=lOjOb4Lv_ww
+
 documentation for beginning projects:
   https://docs.godotengine.org/en/stable/getting_started/step_by_step/
 
