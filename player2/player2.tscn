@@ -1,8 +1,12 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://assets/character/professor/professor_movement _updated.png" type="Texture" id=1]
 [ext_resource path="res://player2/player2.cs" type="Script" id=2]
 [ext_resource path="res://player2/Camera2DScript.cs" type="Script" id=3]
+[ext_resource path="res://assets/icons/up_arrow.png" type="Texture" id=4]
+[ext_resource path="res://assets/icons/down_arrow.png" type="Texture" id=5]
+[ext_resource path="res://assets/icons/left_arrow.png" type="Texture" id=6]
+[ext_resource path="res://assets/icons/right_arrow.png" type="Texture" id=7]
 
 [sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 8, 8 )
@@ -260,3 +264,29 @@ cast_to = Vector2( 0, 16 )
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 script = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="mobile_up_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 208, 128 )
+scale = Vector2( 0.0319998, 0.032 )
+normal = ExtResource( 4 )
+action = "ui_up"
+
+[node name="mobile_down_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 208, 160 )
+scale = Vector2( 0.0319998, 0.0319999 )
+normal = ExtResource( 5 )
+action = "ui_down"
+
+[node name="mobile_left_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 192, 144 )
+scale = Vector2( 0.032, 0.032 )
+normal = ExtResource( 6 )
+action = "ui_left"
+
+[node name="mobile_rigth_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+position = Vector2( 224, 144 )
+scale = Vector2( 0.0319998, 0.0319999 )
+normal = ExtResource( 7 )
+action = "ui_right"
