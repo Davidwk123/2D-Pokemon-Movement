@@ -11,19 +11,37 @@ Milestone 1 -- No new team members
 --------------------------------------------------------------------
 
 Milestone 2 -- No new team members
-* Larger Scale Map -- David
+* Larger Scale Map -- David 		<*>
 	*Bounds on map
 
-* Camera Tracking  -- David
+* Camera Tracking  -- David 		<*>
 	*Follow character, make sure only thing in view is correct map
 
 * Find constant size for character 		<*>
 
-* Possibly refactor movement of Character using animation tree -- Kalin
-	-research web for good pixel art 
-	-find really good animation for one character
-	-make sure idle movement works as expected
+* Possibly refactor movement of Character using animation tree -- Kalin		<*>
+	-research web for good pixel art 		<*>
+	-find really good animation for one character        --->
+	-make sure idle movement works as expected		
 
-*Teach eachother concepts
+*Teach eachother concepts	--->
 
 ----------------------------------------------------------------------
+Milestone 3 -- 
+* animated background feature -- David
+	- flower
+	- water
+* Map Design -- David
+	- add lake
+	- add garden 
+
+* Learn things from videos in main -- Kalin
+
+* Prodidy Character -- Kalin 
+	-find really good animation for one character  
+		-sprint
+		-jumping
+
+* movement implementation -- Kalin 
+	- sprint 
+
