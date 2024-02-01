@@ -1,11 +1,6 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://assets/maps/pokmeon_tileset.png" type="Texture" id=1]
-[ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/icons/up_arrow.png" type="Texture" id=3]
-[ext_resource path="res://assets/icons/down_arrow.png" type="Texture" id=4]
-[ext_resource path="res://assets/icons/left_arrow.png" type="Texture" id=5]
-[ext_resource path="res://assets/icons/right_arrow.png" type="Texture" id=6]
 [ext_resource path="res://player2/player2.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
@@ -722,9 +717,6 @@ tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 
 position = Vector2( 128, 96 )
 scale = Vector2( 2, 2 )
 
-[node name="Player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 288, 64 )
-
 [node name="TileMap_tree" type="TileMap" parent="YSort"]
 scale = Vector2( 2, 2 )
 tile_set = SubResource( 1 )
@@ -734,27 +726,3 @@ cell_y_sort = true
 show_collision = true
 format = 1
 tile_data = PoolIntArray( 65537, 24, 0 )
-
-[node name="mobile_up_arrow" type="TouchScreenButton" parent="."]
-position = Vector2( 1115, 180 )
-scale = Vector2( 0.194, 0.184 )
-normal = ExtResource( 3 )
-action = "ui_up"
-
-[node name="mobile_down_arrow" type="TouchScreenButton" parent="."]
-position = Vector2( 1119, 391 )
-scale = Vector2( 0.188, 0.19 )
-normal = ExtResource( 4 )
-action = "ui_down"
-
-[node name="mobile_left_arrow" type="TouchScreenButton" parent="."]
-position = Vector2( 1004, 290 )
-scale = Vector2( 0.196, 0.18 )
-normal = ExtResource( 5 )
-action = "ui_left"
-
-[node name="mobile_rigth_arrow" type="TouchScreenButton" parent="."]
-position = Vector2( 1221, 284 )
-scale = Vector2( 0.184, 0.184 )
-normal = ExtResource( 6 )
-action = "ui_right"
