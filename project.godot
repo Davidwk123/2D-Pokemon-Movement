@@ -16,7 +16,12 @@ config/icon="res://assets/icons/icon.png"
 
 [display]
 
-window/size/height=576
+window/size/width=256
+window/size/height=192
+window/size/test_width=1280
+window/size/test_height=720
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [global]
 
@@ -33,6 +38,10 @@ up={
 "events": [  ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [physics]
 
 common/enable_pause_aware_picking=true
@@ -41,5 +50,6 @@ common/enable_pause_aware_picking=true
 
 quality/driver/driver_name="GLES2"
 quality/driver/fallback_to_gles2=true
+2d/snapping/use_gpu_pixel_snap=true
 vram_compression/import_etc=true
 vram_compression/import_etc2=false

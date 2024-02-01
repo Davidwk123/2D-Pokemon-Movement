@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pokmeon_tileset.png-31c1bba1af4ca7f2cca39b21ad6bb3cf.stex"
+path="res://.import/professor_movement _updated.png-a6a914521d9b7d890d8809578701462c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/maps/pokmeon_tileset.png"
-dest_files=[ "res://.import/pokmeon_tileset.png-31c1bba1af4ca7f2cca39b21ad6bb3cf.stex" ]
+source_file="res://assets/character/professor/professor_movement _updated.png"
+dest_files=[ "res://.import/professor_movement _updated.png-a6a914521d9b7d890d8809578701462c.stex" ]
 
 [params]
 

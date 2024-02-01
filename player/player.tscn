@@ -4,8 +4,8 @@
 [ext_resource path="res://player/player.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 26.0
-height = 2.0
+radius = 40.0
+height = 62.0
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
@@ -119,11 +119,11 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2, -1 )
+position = Vector2( 12, 27 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -4, -6 )
-scale = Vector2( 0.434091, 0.368063 )
+position = Vector2( -10, 8 )
+scale = Vector2( 1.4065, 1.2465 )
 frames = SubResource( 2 )
 animation = "idle"
