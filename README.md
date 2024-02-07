@@ -21,6 +21,7 @@ character finder:
 
 photo editor free:
   https://www.fotor.com/features/background-remover
+  sprite cutter: https://ezgif.com/sprite-cutter/ezgif-2-7a601552be.png
 
 map:
   16x16: https://www.deviantart.com/chaoticcherrycake/art/Pokemon-Tileset-From-Public-Tiles-358379026
