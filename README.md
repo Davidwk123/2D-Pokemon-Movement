@@ -26,6 +26,8 @@ photo editor free:
 map:
   16x16: https://www.deviantart.com/chaoticcherrycake/art/Pokemon-Tileset-From-Public-Tiles-358379026
   32x32: https://www.deviantart.com/chaoticcherrycake/art/Pokemon-Tileset-From-Public-Tiles-32x32-623246343
+  16x16 flowers: https://blueapollo.itch.io/16x16-forest-tileset
+  water: https://opengameart.org/content/animated-ocean-water-tile
 
 character:
   tourist girl: https://www.deviantart.com/arkeweditor/art/Overworld-sprite-tourist-XY-886638350
