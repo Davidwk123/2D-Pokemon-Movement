@@ -16,7 +16,7 @@ config/icon="res://assets/icons/movement_icon.png"
 
 [display]
 
-window/size/width=256
+window/size/width=288
 window/size/height=192
 window/size/test_width=1280
 window/size/test_height=720
