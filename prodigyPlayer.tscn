@@ -20,6 +20,18 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 12 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:frame_coords")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 5, 4 ) ]
+}
 
 [sub_resource type="Animation" id=3]
 resource_name = "idleDown"
@@ -79,7 +91,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 14 ]
+"values": [ 0 ]
 }
 
 [sub_resource type="Animation" id=13]
@@ -327,20 +339,20 @@ animation = "idleLeft"
 [sub_resource type="AnimationNodeAnimation" id=25]
 animation = "idleRight"
 
-[sub_resource type="AnimationNodeAnimation" id=26]
-animation = "idleUp"
-
-[sub_resource type="AnimationNodeAnimation" id=27]
+[sub_resource type="AnimationNodeAnimation" id=42]
 animation = "idleDown"
+
+[sub_resource type="AnimationNodeAnimation" id=43]
+animation = "idleUp"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=28]
 blend_point_0/node = SubResource( 24 )
 blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 25 )
 blend_point_1/pos = Vector2( 1, 0 )
-blend_point_2/node = SubResource( 26 )
+blend_point_2/node = SubResource( 42 )
 blend_point_2/pos = Vector2( 0, 1 )
-blend_point_3/node = SubResource( 27 )
+blend_point_3/node = SubResource( 43 )
 blend_point_3/pos = Vector2( 0, -1 )
 blend_mode = 1
 
@@ -350,20 +362,20 @@ animation = "walkLeft"
 [sub_resource type="AnimationNodeAnimation" id=30]
 animation = "walkRight"
 
-[sub_resource type="AnimationNodeAnimation" id=31]
-animation = "walkDown"
-
-[sub_resource type="AnimationNodeAnimation" id=32]
+[sub_resource type="AnimationNodeAnimation" id=40]
 animation = "walkUp"
+
+[sub_resource type="AnimationNodeAnimation" id=41]
+animation = "walkDown"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id=33]
 blend_point_0/node = SubResource( 29 )
 blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 30 )
 blend_point_1/pos = Vector2( 1, 0 )
-blend_point_2/node = SubResource( 31 )
+blend_point_2/node = SubResource( 40 )
 blend_point_2/pos = Vector2( 0, -1 )
-blend_point_3/node = SubResource( 32 )
+blend_point_3/node = SubResource( 41 )
 blend_point_3/pos = Vector2( 0, 1 )
 blend_mode = 1
 
@@ -381,7 +393,7 @@ states/Sprint/position = Vector2( 604, 111 )
 states/idle/node = SubResource( 28 )
 states/idle/position = Vector2( 237, 121 )
 states/walk/node = SubResource( 33 )
-states/walk/position = Vector2( 401.5, 120.375 )
+states/walk/position = Vector2( 402, 120.844 )
 transitions = [ "idle", "walk", SubResource( 34 ), "walk", "Sprint", SubResource( 35 ), "walk", "idle", SubResource( 36 ), "Sprint", "walk", SubResource( 37 ) ]
 start_node = "idle"
 
@@ -397,7 +409,12 @@ texture = ExtResource( 1 )
 centered = false
 hframes = 7
 vframes = 5
-frame = 12
+frame = 33
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 40, 176 )
+scale = Vector2( 0.674699, 0.733333 )
+current = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 37.5, 174.5 )
@@ -429,4 +446,8 @@ active = true
 parameters/playback = SubResource( 39 )
 parameters/Sprint/blend_position = Vector2( 0, 0 )
 parameters/idle/blend_position = Vector2( 0, 0.995708 )
-parameters/walk/blend_position = Vector2( -0.993789, -0.00767267 )
+parameters/walk/blend_position = Vector2( -0.0198758, 0.317597 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 8, 8 )
+cast_to = Vector2( 0, 16 )
