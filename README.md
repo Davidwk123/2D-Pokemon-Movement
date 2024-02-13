@@ -33,3 +33,4 @@ character:
   tourist girl: https://www.deviantart.com/arkeweditor/art/Overworld-sprite-tourist-XY-886638350
   animation: https://www.youtube.com/watch?v=jSv5sGpnFso
   Character camera movement: https://www.youtube.com/watch?v=QH5YtfVq6g0&t=92s
+  resize grid pictures- https://www.reddit.com/r/godot/comments/teb98b/sprite_sheet_alignment_problem/
