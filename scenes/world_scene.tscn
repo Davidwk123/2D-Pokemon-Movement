@@ -729,6 +729,6 @@ show_collision = true
 format = 1
 tile_data = PoolIntArray( 65537, 24, 0 )
 
-[node name="prodigyPlayer" parent="." instance=ExtResource( 2 )]
+[node name="prodigyPlayer" parent="YSort" instance=ExtResource( 2 )]
 script = ExtResource( 3 )
 WalkSpeed = 3.0
