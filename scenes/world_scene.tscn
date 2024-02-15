@@ -716,7 +716,8 @@ tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 
 [node name="YSort" type="YSort" parent="."]
 
 [node name="player2" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 96, 144 )
+visible = false
+position = Vector2( 88, 144 )
 scale = Vector2( 2, 2 )
 
 [node name="TileMap_tree" type="TileMap" parent="YSort"]
@@ -730,5 +731,6 @@ format = 1
 tile_data = PoolIntArray( 65537, 24, 0 )
 
 [node name="prodigyPlayer" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 16, 32 )
 script = ExtResource( 3 )
 WalkSpeed = 3.0

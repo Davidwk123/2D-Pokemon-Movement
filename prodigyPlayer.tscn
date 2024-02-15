@@ -1,10 +1,10 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://assets/character/prodigy/og.png" type="Texture" id=1]
 [ext_resource path="res://prodigyPlayer.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10.5, 18.5 )
+extents = Vector2( 8, 20 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -310,29 +310,6 @@ tracks/0/keys = {
 "values": [ 22, 5, 22, 9 ]
 }
 
-[sub_resource type="AnimationNodeAnimation" id=19]
-animation = "jumpLeft"
-
-[sub_resource type="AnimationNodeAnimation" id=20]
-animation = "runRight"
-
-[sub_resource type="AnimationNodeAnimation" id=21]
-animation = "runDown"
-
-[sub_resource type="AnimationNodeAnimation" id=22]
-animation = "runUp"
-
-[sub_resource type="AnimationNodeBlendSpace2D" id=23]
-blend_point_0/node = SubResource( 19 )
-blend_point_0/pos = Vector2( -1, 0 )
-blend_point_1/node = SubResource( 20 )
-blend_point_1/pos = Vector2( 1, 0 )
-blend_point_2/node = SubResource( 21 )
-blend_point_2/pos = Vector2( 0, -1 )
-blend_point_3/node = SubResource( 22 )
-blend_point_3/pos = Vector2( 0, 1 )
-blend_mode = 1
-
 [sub_resource type="AnimationNodeAnimation" id=24]
 animation = "idleLeft"
 
@@ -354,6 +331,29 @@ blend_point_2/node = SubResource( 42 )
 blend_point_2/pos = Vector2( 0, 1 )
 blend_point_3/node = SubResource( 43 )
 blend_point_3/pos = Vector2( 0, -1 )
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id=20]
+animation = "runRight"
+
+[sub_resource type="AnimationNodeAnimation" id=21]
+animation = "runDown"
+
+[sub_resource type="AnimationNodeAnimation" id=22]
+animation = "runUp"
+
+[sub_resource type="AnimationNodeAnimation" id=44]
+animation = "runLeft"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id=23]
+blend_point_0/node = SubResource( 20 )
+blend_point_0/pos = Vector2( 1, 0 )
+blend_point_1/node = SubResource( 21 )
+blend_point_1/pos = Vector2( 0, 1 )
+blend_point_2/node = SubResource( 22 )
+blend_point_2/pos = Vector2( 0, -1 )
+blend_point_3/node = SubResource( 44 )
+blend_point_3/pos = Vector2( -1, 0 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=29]
@@ -387,15 +387,20 @@ blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=37]
 
+[sub_resource type="AnimationNodeStateMachineTransition" id=45]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id=46]
+
 [sub_resource type="AnimationNodeStateMachine" id=38]
-states/Sprint/node = SubResource( 23 )
-states/Sprint/position = Vector2( 604, 111 )
 states/idle/node = SubResource( 28 )
 states/idle/position = Vector2( 237, 121 )
+states/sprint/node = SubResource( 23 )
+states/sprint/position = Vector2( 365, 267.5 )
 states/walk/node = SubResource( 33 )
-states/walk/position = Vector2( 402, 120.844 )
-transitions = [ "idle", "walk", SubResource( 34 ), "walk", "Sprint", SubResource( 35 ), "walk", "idle", SubResource( 36 ), "Sprint", "walk", SubResource( 37 ) ]
+states/walk/position = Vector2( 400.5, 120.711 )
+transitions = [ "idle", "walk", SubResource( 34 ), "walk", "sprint", SubResource( 35 ), "walk", "idle", SubResource( 36 ), "sprint", "walk", SubResource( 37 ), "idle", "sprint", SubResource( 45 ), "sprint", "idle", SubResource( 46 ) ]
 start_node = "idle"
+graph_offset = Vector2( -26.3701, 79.3125 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=39]
 
@@ -403,8 +408,8 @@ start_node = "idle"
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 8, 137 )
-scale = Vector2( 0.674699, 0.733333 )
+position = Vector2( 0, -9.53674e-07 )
+scale = Vector2( 0.648649, 0.676056 )
 texture = ExtResource( 1 )
 centered = false
 hframes = 7
@@ -415,12 +420,12 @@ region_rect = Rect2( -10, 7, 523, 358 )
 region_filter_clip = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 40, 176 )
+position = Vector2( 32, 8 )
 scale = Vector2( 0.674699, 0.733333 )
 current = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 40, 168 )
+position = Vector2( 24, 28 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -447,10 +452,10 @@ tree_root = SubResource( 38 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 39 )
-parameters/Sprint/blend_position = Vector2( 0, 0 )
 parameters/idle/blend_position = Vector2( 0, 0.995708 )
+parameters/sprint/blend_position = Vector2( 0.0310559, -0.785408 )
 parameters/walk/blend_position = Vector2( -0.0198758, 0.317597 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( 40, 160 )
-cast_to = Vector2( 0, 40 )
+position = Vector2( 24, 24 )
+cast_to = Vector2( 0, 32 )

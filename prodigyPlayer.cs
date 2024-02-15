@@ -19,6 +19,8 @@ public class prodigyPlayer : KinematicBody2D
 	[Export]
 	public float WalkSpeed = 3.0f;
 
+	public float RunSpeed = 4.5f;
+
 	// Scale bascially used to zoom in map and correctly adjust character tile movement
 	public const int SCALE = 2;
 	// How far the character can move each direction
@@ -29,6 +31,8 @@ public class prodigyPlayer : KinematicBody2D
 	// Direction input when user presses arrow keys
 	public Vector2 InputDirection = new Vector2(0, 0);
 	public bool IsMoving = false;
+
+	public bool Isrunning = false;
 	// Percent use to smooth movement from tile to tile
 	public float PercentMovedToNextTile = 0.0f;
 
@@ -54,8 +58,18 @@ public class prodigyPlayer : KinematicBody2D
 		// Once player inputs a direction, apply movement functionality 
 		else if (InputDirection != Vector2.Zero)
 		{
+			if(Input.IsActionPressed("ui_run")){
+				_ToggleRun();
+			}
+
+			if(Isrunning == false){
 			// Play the walk animation 
 			AnimState.Travel("walk");
+			}else{
+				AnimState.Travel("sprint");
+			}
+
+
 			_Move(delta);
 		}
 		else
@@ -65,7 +79,14 @@ public class prodigyPlayer : KinematicBody2D
 			IsMoving = false;
 		}
 	}
+	private void _ToggleRun(){
+		if(Isrunning){
+			Isrunning = false;
+		}else{
+			Isrunning = true;
+		}
 
+	}
 	// Function used to get input from user 
 	private void _ProcessPlayerInput()
 	{
@@ -90,7 +111,11 @@ public class prodigyPlayer : KinematicBody2D
 		{
 			// Set the animation direction for idle/walk
 			AnimTree.Set("parameters/idle/blend_position", InputDirection);
-			AnimTree.Set("parameters/walk/blend_position", InputDirection);
+			AnimTree.Set("parameters/walk/blend_position", InputDirection);	
+			
+			//======
+			AnimTree.Set("parameters/sprint/blend_position", InputDirection);
+			
 			InitialPosition = Position;
 			IsMoving = true; 
 		}
@@ -112,9 +137,14 @@ public class prodigyPlayer : KinematicBody2D
 	   
 		if (Ray.IsColliding() == false)
 		{
+			if(Isrunning){
+				//true means running
+				PercentMovedToNextTile += RunSpeed * delta ;
+			}
+			else{
 			// The distance moved represented with a percent based on the characters speed in the current timestep
 			PercentMovedToNextTile += WalkSpeed * delta;
-
+			}
 			/*
 			 * _Move function will get called every frame untill the PrecentMoved var is greater than or equal to 1,
 			 * each frame the var gets increased each timestep which causes the slow increase of player position,
