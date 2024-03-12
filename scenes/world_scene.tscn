@@ -1,12 +1,11 @@
-
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://assets/maps/pokmeon_tileset.png" type="Texture" id=1]
 [ext_resource path="res://assets/maps/flowers/orange_flower.tres" type="Texture" id=2]
 [ext_resource path="res://assets/maps/flowers/yellow_flower.tres" type="Texture" id=3]
 [ext_resource path="res://assets/maps/water/water.tres" type="Texture" id=4]
-[ext_resource path="res://prodigyPlayer.tscn" type="PackedScene" id=2]
-[ext_resource path="res://prodigyPlayer.cs" type="Script" id=3]
+[ext_resource path="res://prodigyPlayer.cs" type="Script" id=5]
+[ext_resource path="res://prodigyPlayer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://player2/player2.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
@@ -595,20 +594,6 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 24/z_index = 0
-27/name = "yellow_flower.tres 27"
-27/texture = ExtResource( 3 )
-27/tex_offset = Vector2( 0, 0 )
-27/modulate = Color( 1, 1, 1, 1 )
-27/region = Rect2( 0, 0, 16, 16 )
-27/tile_mode = 0
-27/occluder_offset = Vector2( 0, 0 )
-27/navigation_offset = Vector2( 0, 0 )
-27/shape_offset = Vector2( 0, 0 )
-27/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-27/shape_one_way = false
-27/shape_one_way_margin = 0.0
-27/shapes = [  ]
-27/z_index = 0
 28/name = "pokmeon_tileset.png 28"
 28/texture = ExtResource( 1 )
 28/tex_offset = Vector2( 0, 0 )
@@ -632,20 +617,6 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
 28/shape_one_way_margin = 0.0
 28/shapes = [  ]
 28/z_index = 0
-29/name = "orange_flower.tres 29"
-29/texture = ExtResource( 2 )
-29/tex_offset = Vector2( 0, 0 )
-29/modulate = Color( 1, 1, 1, 1 )
-29/region = Rect2( 0, 0, 16, 16 )
-29/tile_mode = 0
-29/occluder_offset = Vector2( 0, 0 )
-29/navigation_offset = Vector2( 0, 0 )
-29/shape_offset = Vector2( 0, 0 )
-29/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-29/shape_one_way = false
-29/shape_one_way_margin = 0.0
-29/shapes = [  ]
-29/z_index = 0
 30/name = "water.tres 30"
 30/texture = ExtResource( 4 )
 30/tex_offset = Vector2( 0, 0 )
@@ -754,6 +725,34 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 32, 0, 32 )
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 30/z_index = 0
+31/name = "yellow_flower.tres 31"
+31/texture = ExtResource( 3 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 16, 16 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 0, 0 )
+31/navigation_offset = Vector2( 0, 0 )
+31/shape_offset = Vector2( 0, 0 )
+31/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+31/shape_one_way = false
+31/shape_one_way_margin = 0.0
+31/shapes = [  ]
+31/z_index = 0
+32/name = "orange_flower.tres 32"
+32/texture = ExtResource( 2 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 16, 16 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 0, 0 )
+32/navigation_offset = Vector2( 0, 0 )
+32/shape_offset = Vector2( 0, 0 )
+32/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+32/shape_one_way = false
+32/shape_one_way_margin = 0.0
+32/shapes = [  ]
+32/z_index = 0
 
 [node name="world_scene" type="Node2D"]
 __meta__ = {
@@ -776,7 +775,7 @@ cell_tile_origin = 2
 cell_y_sort = true
 show_collision = true
 format = 1
-tile_data = PoolIntArray( 917508, 29, 0, 917509, 29, 0, 917510, 29, 0, 917511, 29, 0, 917512, 29, 0, 917516, 27, 0, 917517, 27, 0, 917518, 27, 0, 917519, 27, 0, 917520, 27, 0, 983044, 29, 0, 983045, 29, 0, 983046, 29, 0, 983047, 29, 0, 983048, 29, 0, 983052, 27, 0, 983053, 27, 0, 983054, 27, 0, 983055, 27, 0, 983056, 27, 0, 1048580, 29, 0, 1048581, 29, 0, 1048582, 29, 0, 1048583, 29, 0, 1048584, 29, 0, 1048588, 27, 0, 1048589, 27, 0, 1048590, 27, 0, 1048591, 27, 0, 1048592, 27, 0, 1114116, 29, 0, 1114117, 29, 0, 1114118, 29, 0, 1114119, 29, 0, 1114120, 29, 0, 1114124, 27, 0, 1114125, 27, 0, 1114126, 27, 0, 1114127, 27, 0, 1114128, 27, 0, 1179652, 29, 0, 1179653, 29, 0, 1179654, 29, 0, 1179655, 29, 0, 1179656, 29, 0, 1179660, 27, 0, 1179661, 27, 0, 1179662, 27, 0, 1179663, 27, 0, 1179664, 27, 0, 1441796, 27, 0, 1441797, 27, 0, 1441798, 27, 0, 1441799, 27, 0, 1441800, 27, 0, 1441804, 29, 0, 1441805, 29, 0, 1441806, 29, 0, 1441807, 29, 0, 1441808, 29, 0, 1507332, 27, 0, 1507333, 27, 0, 1507334, 27, 0, 1507335, 27, 0, 1507336, 27, 0, 1507340, 29, 0, 1507341, 29, 0, 1507342, 29, 0, 1507343, 29, 0, 1507344, 29, 0, 1572868, 27, 0, 1572869, 27, 0, 1572870, 27, 0, 1572871, 27, 0, 1572872, 27, 0, 1572876, 29, 0, 1572877, 29, 0, 1572878, 29, 0, 1572879, 29, 0, 1572880, 29, 0, 1638404, 27, 0, 1638405, 27, 0, 1638406, 27, 0, 1638407, 27, 0, 1638408, 27, 0, 1638412, 29, 0, 1638413, 29, 0, 1638414, 29, 0, 1638415, 29, 0, 1638416, 29, 0, 1703940, 27, 0, 1703941, 27, 0, 1703942, 27, 0, 1703943, 27, 0, 1703944, 27, 0, 1703948, 29, 0, 1703949, 29, 0, 1703950, 29, 0, 1703951, 29, 0, 1703952, 29, 0 )
+tile_data = PoolIntArray( 917508, 31, 0, 917509, 31, 0, 917510, 31, 0, 917511, 31, 0, 917512, 31, 0, 917516, 32, 0, 917517, 32, 0, 917518, 32, 0, 917519, 32, 0, 917520, 32, 0, 983044, 31, 0, 983045, 31, 0, 983046, 31, 0, 983047, 31, 0, 983048, 31, 0, 983052, 32, 0, 983053, 32, 0, 983054, 32, 0, 983055, 32, 0, 983056, 32, 0, 1048580, 31, 0, 1048581, 31, 0, 1048582, 31, 0, 1048583, 31, 0, 1048584, 31, 0, 1048588, 32, 0, 1048589, 32, 0, 1048590, 32, 0, 1048591, 32, 0, 1048592, 32, 0, 1114116, 31, 0, 1114117, 31, 0, 1114118, 31, 0, 1114119, 31, 0, 1114120, 31, 0, 1114124, 32, 0, 1114125, 32, 0, 1114126, 32, 0, 1114127, 32, 0, 1114128, 32, 0, 1179652, 31, 0, 1179653, 31, 0, 1179654, 31, 0, 1179655, 31, 0, 1179656, 31, 0, 1179660, 32, 0, 1179661, 32, 0, 1179662, 32, 0, 1179663, 32, 0, 1179664, 32, 0, 1441796, 32, 0, 1441797, 32, 0, 1441798, 32, 0, 1441799, 32, 0, 1441800, 32, 0, 1441804, 31, 0, 1441805, 31, 0, 1441806, 31, 0, 1441807, 31, 0, 1441808, 31, 0, 1507332, 32, 0, 1507333, 32, 0, 1507334, 32, 0, 1507335, 32, 0, 1507336, 32, 0, 1507340, 31, 0, 1507341, 31, 0, 1507342, 31, 0, 1507343, 31, 0, 1507344, 31, 0, 1572868, 32, 0, 1572869, 32, 0, 1572870, 32, 0, 1572871, 32, 0, 1572872, 32, 0, 1572876, 31, 0, 1572877, 31, 0, 1572878, 31, 0, 1572879, 31, 0, 1572880, 31, 0, 1638404, 32, 0, 1638405, 32, 0, 1638406, 32, 0, 1638407, 32, 0, 1638408, 32, 0, 1638412, 31, 0, 1638413, 31, 0, 1638414, 31, 0, 1638415, 31, 0, 1638416, 31, 0, 1703940, 32, 0, 1703941, 32, 0, 1703942, 32, 0, 1703943, 32, 0, 1703944, 32, 0, 1703948, 31, 0, 1703949, 31, 0, 1703950, 31, 0, 1703951, 31, 0, 1703952, 31, 0 )
 
 [node name="TileMap_water" type="TileMap" parent="."]
 scale = Vector2( 2, 2 )
@@ -791,6 +790,7 @@ tile_data = PoolIntArray( 720933, 30, 0, 720934, 30, 131076, 720935, 30, 1, 7209
 [node name="YSort" type="YSort" parent="."]
 
 [node name="player2" parent="YSort" instance=ExtResource( 7 )]
+visible = false
 position = Vector2( 704, 640 )
 scale = Vector2( 2, 2 )
 
@@ -802,12 +802,9 @@ cell_tile_origin = 2
 cell_y_sort = true
 show_collision = true
 format = 1
-
 tile_data = PoolIntArray( 65537, 24, 0 )
 
-[node name="prodigyPlayer" parent="YSort" instance=ExtResource( 2 )]
-visible = false
+[node name="prodigyPlayer" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 16, 32 )
-script = ExtResource( 3 )
+script = ExtResource( 5 )
 WalkSpeed = 3.0
-
