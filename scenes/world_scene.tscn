@@ -1,6 +1,8 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://assets/maps/pokmeon_tileset.png" type="Texture" id=1]
+[ext_resource path="res://prodigyPlayer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://prodigyPlayer.cs" type="Script" id=3]
 [ext_resource path="res://player2/player2.tscn" type="PackedScene" id=7]
 
 [sub_resource type="ConvexPolygonShape2D" id=17]
@@ -714,7 +716,8 @@ tile_data = PoolIntArray( 0, 2, 0, 1, 2, 0, 2, 2, 0, 3, 2, 0, 4, 2, 0, 5, 2, 0, 
 [node name="YSort" type="YSort" parent="."]
 
 [node name="player2" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 128, 96 )
+visible = false
+position = Vector2( 88, 144 )
 scale = Vector2( 2, 2 )
 
 [node name="TileMap_tree" type="TileMap" parent="YSort"]
@@ -726,3 +729,8 @@ cell_y_sort = true
 show_collision = true
 format = 1
 tile_data = PoolIntArray( 65537, 24, 0 )
+
+[node name="prodigyPlayer" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 16, 32 )
+script = ExtResource( 3 )
+WalkSpeed = 3.0
