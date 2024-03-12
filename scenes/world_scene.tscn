@@ -731,6 +731,7 @@ format = 1
 tile_data = PoolIntArray( 65537, 24, 0 )
 
 [node name="prodigyPlayer" parent="YSort" instance=ExtResource( 2 )]
+visible = false
 position = Vector2( 16, 32 )
 script = ExtResource( 3 )
 WalkSpeed = 3.0
