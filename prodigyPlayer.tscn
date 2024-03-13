@@ -4,7 +4,7 @@
 [ext_resource path="res://prodigyPlayer.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 8, 20 )
+extents = Vector2( 8, 8 )
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -409,9 +409,10 @@ script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -9.53674e-07 )
-scale = Vector2( 0.648649, 0.676056 )
+scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 centered = false
+offset = Vector2( -16, -24 )
 hframes = 7
 vframes = 5
 frame = 33
@@ -425,7 +426,7 @@ scale = Vector2( 0.674699, 0.733333 )
 current = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 24, 28 )
+position = Vector2( 8, 8 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
