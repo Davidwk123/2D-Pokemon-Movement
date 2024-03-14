@@ -420,11 +420,6 @@ region_enabled = true
 region_rect = Rect2( -10, 7, 523, 358 )
 region_filter_clip = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 32, 8 )
-scale = Vector2( 0.674699, 0.733333 )
-current = true
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 8, 8 )
 shape = SubResource( 1 )
@@ -458,5 +453,10 @@ parameters/sprint/blend_position = Vector2( 0.0310559, -0.785408 )
 parameters/walk/blend_position = Vector2( -0.0198758, 0.317597 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2( 24, 24 )
-cast_to = Vector2( 0, 32 )
+position = Vector2( 8, 8 )
+cast_to = Vector2( 0, 16 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 8, 0 )
+scale = Vector2( 0.674699, 0.733333 )
+current = true

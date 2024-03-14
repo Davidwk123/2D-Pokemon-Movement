@@ -267,33 +267,33 @@ position = Vector2( 8, 0 )
 current = true
 script = ExtResource( 3 )
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
 
-[node name="mobile_up_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+[node name="mobile_up_arrow" type="TouchScreenButton" parent="Camera2D/CanvasLayer"]
 position = Vector2( 192, 96 )
 scale = Vector2( 0.0639998, 0.064 )
 normal = ExtResource( 4 )
 action = "ui_up"
 
-[node name="mobile_down_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+[node name="mobile_down_arrow" type="TouchScreenButton" parent="Camera2D/CanvasLayer"]
 position = Vector2( 192, 160 )
 scale = Vector2( 0.064, 0.064 )
 normal = ExtResource( 5 )
 action = "ui_down"
 
-[node name="mobile_left_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+[node name="mobile_left_arrow" type="TouchScreenButton" parent="Camera2D/CanvasLayer"]
 position = Vector2( 160, 128 )
 scale = Vector2( 0.064, 0.064 )
 normal = ExtResource( 6 )
 action = "ui_left"
 
-[node name="mobile_rigth_arrow" type="TouchScreenButton" parent="CanvasLayer"]
+[node name="mobile_rigth_arrow" type="TouchScreenButton" parent="Camera2D/CanvasLayer"]
 position = Vector2( 224, 128 )
 scale = Vector2( 0.064, 0.064 )
 normal = ExtResource( 7 )
 action = "ui_right"
 
-[node name="TouchScreenButton" type="TouchScreenButton" parent="CanvasLayer"]
+[node name="TouchScreenButton" type="TouchScreenButton" parent="Camera2D/CanvasLayer"]
 position = Vector2( 8, 152 )
 scale = Vector2( 0.048, 0.0452956 )
 normal = ExtResource( 8 )
